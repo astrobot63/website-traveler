@@ -1,0 +1,36 @@
+body{
+    background-color: hsl(230, 89%, 14%);
+}
+#title{
+    font-size: 3.6rem;
+    color: hsl(58, 86%, 67%);
+    font-family: "Trebuchet MS";
+}
+
+.inputs{
+    font-size: 2rem;
+    font-family: Calibri;
+}
+
+#domainHandler{
+    margin-top: 25px;
+}
+#websiteNameHandler{
+    margin-right: 400px;
+    margin-left: 100px;
+}
+button{
+    font-size: 3rem;
+    font-family: Verdana;
+    background-color: hsl(120, 100%, 67%);
+    border: none;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+    transition: background-color 0.5s ease;
+}
+button:hover{
+    cursor: pointer;
+    background-color: hsl(120, 100%, 83%);
+}
+
