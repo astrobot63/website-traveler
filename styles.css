@@ -1,36 +1,145 @@
-body{
+body {
     background-color: hsl(230, 89%, 14%);
 }
-#title{
+
+
+#title {
     font-size: 3.6rem;
     color: hsl(58, 86%, 67%);
     font-family: "Trebuchet MS";
+    text-align: center;
 }
 
-.inputs{
+
+.inputs {
     font-size: 2rem;
     font-family: Calibri;
 }
 
-#domainHandler{
+
+#websiteNameHandler,
+#domainHandler {
+    width: 300px;
+    height: 50px;
+    box-sizing: border-box;
+    font-size: 2rem;
+    font-family: Calibri;
+}
+
+
+#domainHandler {
     margin-top: 25px;
+    padding-right: 45px;
 }
-#websiteNameHandler{
-    margin-right: 400px;
-    margin-left: 100px;
+
+
+#websiteNameHandler {
+    margin-right: 200px;
+    margin-left: 225px;
 }
-button{
+
+
+#domainWrapper {
+    position: relative;
+    display: inline-block;
+}
+
+
+#domainArrow {
+    position: absolute;
+    right: 5px;
+    top: 30px;
+
+    width: 40px;
+    height: 40px;
+
+    font-size: 1.2rem;
+    font-family: Arial;
+
+    background-color: transparent;
+    color: gray;
+
+    border: none;
+    border-radius: 0;
+
+    padding: 0;
+    margin: 0;
+
+    display: block;
+}
+
+
+#domainArrow:hover {
+    background-color: transparent;
+    cursor: pointer;
+}
+
+
+#domainMenu {
+    display: none;
+
+    position: absolute;
+    top: 75px;
+    left: 0;
+
+    width: 300px;
+
+    background-color: white;
+    border: 1px solid black;
+    box-sizing: border-box;
+
+    z-index: 1000;
+}
+
+
+#domainMenu.open {
+    display: block;
+}
+
+
+#domainMenu div {
+    padding: 10px;
+
+    font-size: 1.5rem;
+    font-family: Calibri;
+
+    color: black;
+
+    cursor: pointer;
+}
+
+
+#domainMenu div:hover {
+    background-color: #eeeeee;
+}
+
+
+body > button {
     font-size: 3rem;
     font-family: Verdana;
+
     background-color: hsl(120, 100%, 67%);
+
     border: none;
     border-radius: 10px;
+
     display: block;
     margin: 0 auto;
+
     transition: background-color 0.5s ease;
+    margin-top: 100px;
 }
-button:hover{
+
+
+body > button:hover {
     cursor: pointer;
     background-color: hsl(120, 100%, 83%);
+}
+
+
+p {
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
 }
 
